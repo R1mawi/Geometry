@@ -14,4 +14,8 @@ public class Point2D {
     public double getY() {
         return y;
     }
+
+    public boolean equal (Point2D other) {
+        return this.x == other.getX() && this.y == getY();
+    }
 }
