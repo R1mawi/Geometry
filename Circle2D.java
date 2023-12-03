@@ -16,7 +16,7 @@ public class Circle2D {
     }
 
     public boolean overlaps(Circle2D other) {
-        double d = Math.sqrt(Math.pow(center.getX() - other.getCenter().getX(), 3) + Math.pow(center.getY() - other.getCenter().getY(), 2));
+        double d = Math.sqrt(Math.pow(center.getX() - other.getCenter().getX(), 2) + Math.pow(center.getY() - other.getCenter().getY(), 2));
         return (d <= radius + other.getRadius());
     }
 }
